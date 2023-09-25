@@ -1,0 +1,207 @@
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+    background-color: $color-footer;
+    color: $color-font-mid;
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    a {
+        color: $color-font-mid;
+        &:hover,
+        &.button {
+            color: $color-font-lightest;
+        }
+    }
+    input {
+        border: 1px solid $color-border-darkest;
+    }
+    .widget {
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 17px;
+        a{
+            font-weight: 400;
+        }
+    }
+    p:last-child {
+        margin-bottom: 0;
+        color: #fff;
+    }
+} // .footer-widgets
+.footer-widgets-1,
+.footer-widgets-2,
+.footer-widgets-3 {
+    @include breakpoint('large') {
+        width: 300px;
+    }
+    @include breakpoint('medium') {
+        width: 100%;
+    }
+}
+
+.footer-widgets-1 {
+    margin-right: 60px;
+    color: #FFFFFF;
+    font-size: 14px;
+    @include breakpoint('large') {
+        margin-right: 30px;
+    }
+    @include breakpoint('medium') {
+        margin-right: 0;
+    }
+    img {
+        width: 153px;
+    }
+    a {
+        color: #fff;
+    }
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+    float: left;
+    width: 28%;
+    @include breakpoint('medium') {
+        width: 100%;
+    }
+}
+
+.footer-widgets-1{
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            border-radius: 6rem;
+            border: 2px solid #fff;
+            width: 22px;
+            padding: 0px 0px;
+            display: block;
+            height: 22px;
+            text-align: center;
+            font-size: 12px;
+            background: #fff;
+            color: #2F3533;
+
+            &:hover {
+                background-color: transparent;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    @include breakpoint('medium') {
+        max-width: 50%;
+    }
+    @include breakpoint('small') {
+        max-width: 100%;
+    }
+}
+.footer-widgets-2 {
+    li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+            color: #fff;
+            border-radius: 6rem;
+            border: 2px solid #fff;
+            width: 40px;
+            padding: 4px 11px;
+            display: block;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            &:hover {
+                background-color: #fff;
+                i {
+                    color: #263248;
+                }
+            }
+        }
+    }
+}
+
+.footer-widgets-3 {
+    float: right;
+    width: 35%;
+    color: #fff;
+    font-size: 14px;
+    max-width: 370px;
+    .span6 {
+        padding-top: 25px;
+        p {
+            font-weight: bold;
+        }
+    }
+    @include breakpoint('medium') {
+        width: 100%;
+        max-width: 50%;
+    }
+    @include breakpoint('small') {
+        max-width: 100%;
+        p{
+            text-align: left!important;
+            img{
+                float: left!important;
+            }
+        }
+    }
+    .row-fluid{
+        .span6{
+            @include breakpoint('medium') {
+                width: 115px;
+                float: left;
+                padding-top: 0;
+            }
+        }
+        .span4{
+            @include breakpoint('medium') {
+                width: 20%;
+                float: left;
+                margin-left: 15px;
+            }
+        }
+        .span2{
+            @include breakpoint('medium') {
+                width: 10%;
+                float: left;
+                margin-left: 15px;
+            }
+        }
+        .rhcol{
+            p{
+                text-align: left!important;
+            }
+        }
+    }
+    p{
+        color: #fff;
+        
+    }
+    img:last-child,
+    p:last-child{
+        clear: both;
+        text-align: right;
+    }
+}
+
+
+/*
+Site Footer
+---------------------------------------------------------------------------------------------------- */
+
+.site-footer {
+    background-color: $color-bg-site-footer;
+    font-size: $font-size-h6;
+    line-height: 1;
+    padding: 40px 0;
+    text-align: center;
+    p {
+        margin-bottom: 0;
+    }
+}

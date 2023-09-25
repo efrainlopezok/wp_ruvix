@@ -1,0 +1,145 @@
+/* Typographical Elements
+--------------------------------------------- */
+
+body {
+    background-color: $color-bg-base;
+    color: $color-font-base;
+    font-family: $font-family-montserrat;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    margin: 0;
+
+    @include breakpoint('small') {
+        background-color: #fff;
+        font-size: $font-size-h6;
+    }
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+    @include transition(all, 0.1s, ease-in-out);
+}
+
+::-moz-selection {
+    background-color: $color-font-base;
+    color: #fff;
+}
+
+::selection {
+    background-color: $color-font-base;
+    color: #fff;
+}
+
+a {
+    color: $color-green-header;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+a:hover {
+    color: $color-link-hover;
+}
+
+p {
+    color: #3d3d3d;
+    font-weight: 400;
+    margin: 0 0 15px;
+    padding: 0;
+    line-height: normal;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+    font-family: $font-family-montserratBold;
+}
+
+blockquote,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 40px;
+}
+
+blockquote::before {
+    content: "\201C";
+    display: block;
+    font-size: $font-size-h2;
+    height: 0;
+    left: -20px;
+    position: relative;
+    top: -10px;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-font-base;
+    font-family: $font-family-montserrat;
+    font-weight: $font-weight-normal;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: 18px;
+    color: #3d3d3d;
+    font-weight: 700;
+    font-family: $font-family-montserratBold;
+}
+
+h3 {
+    color: #263248;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $font-family-montserratBold;
+}
+
+h4 {
+    color: $color-green-header;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: $font-family-montserratBold;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+}

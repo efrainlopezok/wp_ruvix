@@ -1,0 +1,213 @@
+
+.text-light {
+    color: #97a4b4;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+/* .page-template-page-proyecto{
+    .text-light{
+        color: #97a4b4;
+    }
+} */
+.text-bold{
+    font-weight: 700;
+    font-family: "MontserratBold";
+}
+.section-project {
+    padding-bottom: 63px;
+    padding-top: 80px;
+    background: #fff;
+    @include breakpoint('small') {
+        display: none;
+    }
+    p {
+        line-height: normal;
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .text-light{
+        font-size: 14px;
+    }
+    .detail-r{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 30px;
+        color: #03B98C;
+        margin-bottom: 35px;
+    }
+    .card {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .card-header {
+            margin-bottom: 30px;
+            position: relative;
+            .tag {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+            .project-thumbnail {
+                height: 167px;
+                width: 100%;
+                background-size: cover !important;
+                background-position: center !important;
+            }
+        }
+        .card-body {
+            h6 {
+                margin-bottom: 8px;
+            }
+            a{
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                font-size: 15px;
+                font-weight: 400;
+            }
+            a.ent-i,
+            a.eventa-i{
+                background: #F5A623;
+            }
+            h4.ent-i,
+            h4.eventa-i{
+                color: #F5A623;
+            }
+            a.blanco-i,
+            a.casa-i,
+            a.dstacd-i{
+                background: #03B98C;
+            }
+            h4.blanco-i,
+            h4.casa-i,
+            h4.dstacd-i{
+                color: #03B98C;
+            }
+            a.verde-i,
+            a.dpto-i{
+                background: #03B905;
+            }
+            h4.verde-i,
+            h4.dpto-i{
+                color: #03B905;
+            }
+            hr{
+                background-color: #128AA8;
+            }
+            p{
+                margin-bottom: 5px;
+                strong{
+                    font-size: 13px;
+                    font-family: $font-family-montserratBold;
+                }
+            }
+            .project-excerpt{
+                min-height: 57px;
+            }
+        }
+    }
+    .description-house{
+        overflow-y: hidden;
+        max-height: 35px;
+    }
+    .more-details {
+        padding-top: 12px;
+        min-height: 70px;
+        .text-light.text-img {
+            margin-bottom: 20px;
+            position: relative;
+            span{
+                display: block;
+            }
+            img{
+                position: absolute;
+                top: 9px;
+                left: 0;
+            }
+            i{
+                font-size: 17px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            @media screen and (max-width: 1290px) {
+                font-size: 12px;
+                span{
+                    padding-left: 28px;
+                }
+            }
+        }
+        .type-proj{
+            min-height: 32px;
+        }
+    }
+}
+.page-template-page-proyecto{
+    .section-project{
+        .text-light{
+            font-size: 12px;
+        }
+    }
+}
+.more-details .verde-i,
+.more-details .dpto-i{
+    color: #03B905;
+}
+.more-details .blanco-i,
+.more-details .casa-i,
+.more-details .dstacd-i{
+    color: #03B98C;
+}
+.more-details .ent-i,
+.more-details .eventa-i{
+    color: #F5A623;
+}
+
+@media only screen and(max-width:1530px){
+    .w-lg-100{
+        flex: auto !important;
+        max-width: 100% !important;
+    }
+}
+@media only screen and(max-width:1200px){
+    .sidebar-primary{
+        .searchandfilter{
+            margin-left: -60px;
+        }
+    }
+    .slider-lastprojects{
+        strong{
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and(max-width:960px){
+    .w-md-100{
+        flex: auto !important;
+        max-width: 100% !important;
+    }
+}
+
+.home{
+    .project-thumbnail{
+        height: 237px!important;
+        // max-width: 320px;
+    }
+}
+.single-proyecto{
+    .section-project{
+        background-color: rgba(155, 155, 155, 0.05);
+    }
+    .simgle-detail{
+        .result{
+            font-family: $font-family-montserratBold;
+        }
+        p{
+            strong{
+                font-family: $font-family-montserratBold;
+            }
+        }
+    }
+}

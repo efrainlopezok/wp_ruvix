@@ -1,0 +1,22 @@
+/* Site Containers
+--------------------------------------------- */
+
+.site-inner,
+.wrap {
+    margin: 0 auto;
+    max-width: 1400px;
+    @include breakpoint('large') {
+        max-width: 940px;
+    }
+    @include breakpoint('medium') {
+        max-width: 780px;
+    }
+    @include breakpoint('small') {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.site-inner {
+    clear: both;
+}
